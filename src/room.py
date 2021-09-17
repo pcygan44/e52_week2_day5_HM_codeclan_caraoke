@@ -1,9 +1,8 @@
 class Room:
-    def __init__ (self, input_room_number, input_space,):
+    def __init__ (self, input_room_name, input_space,):
 
-        self.room_number = input_room_number
+        self.room_name = input_room_name
         self.space = input_space
         self.guest = []
-        delf.song_list = []
+        self.song_list = []
 
-        
