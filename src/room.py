@@ -23,4 +23,15 @@ class Room:
     def remove_guest(self, guest):
         self.guest.remove(guest)
 
+    def check_entry_fee(self,imput_guest):
+        if imput_guest.wallet > self.fee:
+            return True
+        else:
+            return False
+    def check_avalable_space_in_room(self,):
+        if len(self.guest) >= self.space:
+            return False
+        else:
+            return True
+
     

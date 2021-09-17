@@ -5,5 +5,6 @@ class Guest:
         self.favorite_song = input_favorite_song
 
 
-    def pay(self, input_song):
-        self.wallet -= input_song.price
+    def pay(self, amount):
+        
+        self.wallet -= amount
