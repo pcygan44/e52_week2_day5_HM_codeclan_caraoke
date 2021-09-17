@@ -3,3 +3,7 @@ class Guest:
         self.name = input_name
         self.wallet = input_wallet
         self.favorite_song = input_favorite_song
+
+
+    def pay(self, input_song):
+        self.wallet -= input_song.price

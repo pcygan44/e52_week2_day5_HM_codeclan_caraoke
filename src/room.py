@@ -6,3 +6,9 @@ class Room:
         self.guest = []
         self.song_list = []
 
+
+    def number_of_guest_in_room(self):
+        return len(self.guest)
+
+    def add_guest(self, guest):
+        self.guest.append(guest)
