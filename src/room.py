@@ -5,6 +5,7 @@ class Room:
         self.space = input_space
         self.guest = []
         self.song_list = []
+        self.fee = 10
 
 
     def number_of_guest_in_room(self):
@@ -12,3 +13,9 @@ class Room:
 
     def add_guest(self, guest):
         self.guest.append(guest)
+
+    def number_of_song_in_room(self):
+        return len(self.song_list)
+
+    def add_song(self, song):
+        self.song_list.append(song)
